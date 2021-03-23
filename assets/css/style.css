@@ -628,9 +628,9 @@ ul.work li.active {
     position: relative;
     float: left;
     overflow: hidden;
-    min-width: 320px;
+    /* min-width: 320px;
     max-width: 480px;
-    max-height: 360px;
+    max-height: 360px; */
     width: 100%;
     height: auto;
     text-align: center;
