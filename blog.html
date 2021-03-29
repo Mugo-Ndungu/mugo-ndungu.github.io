@@ -312,7 +312,27 @@
                                 $ npm install mysql2
                                 $ npm install oracledb
                                 $ npm install mssql</pre>
-                            <p>Here’s an example of setup code:</p>
+                            <p>Here’s an example of setup code:
+                                <pre>const knex = require('knex')({
+                                    client: 'mysql',
+                                    connection: {
+                                      host : '127.0.0.1',
+                                      user : 'your_database_user',
+                                      password : 'your_database_password',
+                                      database : 'myapp_test'
+                                    }
+                                  });
+                                  
+                                  knex.schema.createTable('users', function (table) {
+                                    table.increments();
+                                    table.string('name');
+                                    table.timestamps();
+                                  })
+                                  
+                                  Outputs:
+                                  create table `users` (`id` int unsigned not null auto_increment primary key, `name` varchar(255),
+                                  `created_at` datetime, `updated_at` datetime)</pre>
+                            </p>
                         </div>
                         <div class="blog-bottom">
                             <ul class="share">
