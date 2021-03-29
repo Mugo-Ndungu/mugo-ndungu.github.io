@@ -268,7 +268,51 @@
                               as `a`, `table</pre>
                             </div>
                             <p>This begs the question of why should one use a Query Builder instead of writing raw SQL
-                                statements. I’ll give you four reasons:</p>
+                                statements. I’ll give you four reasons:
+                                <ul>
+                                    <li class="ml-3" style="margin-left: 20px;"><i class="fas mr-1 fa-dot-circle"></i>It
+                                        helps you abstract your code from your database’s SQL dialect, making switching
+                                        easier.</li>
+                                    <li class="ml-3" style="margin-left: 20px;"><i class="fas mr-1 fa-dot-circle"></i>It
+                                        eliminates, or greatly reduces, the chances of SQL injection attacks on your
+                                        application.</li>
+                                    <li class="ml-3" style="margin-left: 20px;"><i class="fas mr-1 fa-dot-circle"></i>It
+                                        allows easy building of queries with dynamic conditions.</li>
+                                    <li class="ml-3" style="margin-left: 20px;"><i class="fas mr-1 fa-dot-circle"></i>It
+                                        comes with additional features and CLI tools for performing database development
+                                        operations.</li>
+                                </ul>
+                            </p>
+                            <p>Those features include:
+                                <ul>
+                                    <li class="ml-3" style="margin-left: 20px;"><i
+                                            class="fas mr-1 fa-dot-circle"></i>connection pooling</li>
+                                    <li class="ml-3" style="margin-left: 20px;"><i
+                                            class="fas mr-1 fa-dot-circle"></i>callback and Promise interfaces</li>
+                                    <li class="ml-3" style="margin-left: 20px;"><i
+                                            class="fas mr-1 fa-dot-circle"></i>stream interface</li>
+                                    <li class="ml-3" style="margin-left: 20px;"><i
+                                            class="fas mr-1 fa-dot-circle"></i>transaction support</li>
+                                    <li class="ml-3" style="margin-left: 20px;"><i
+                                            class="fas mr-1 fa-dot-circle"></i>schema support</li>
+                                    <li class="ml-3" style="margin-left: 20px;"><i
+                                            class="fas mr-1 fa-dot-circle"></i>migration</li>
+                                    <li class="ml-3" style="margin-left: 20px;"><i
+                                            class="fas mr-1 fa-dot-circle"></i>seeding</li>
+                                </ul>
+                            </p>
+                            <p>Installing it in your application requires you to install the Knex.js package, along with
+                                the driver of the database you’re using:</p>
+                            <pre>$ npm install knex --save
+
+                                # Then add one of the following (adding a --save) flag:
+                                $ npm install pg
+                                $ npm install sqlite3
+                                $ npm install mysql
+                                $ npm install mysql2
+                                $ npm install oracledb
+                                $ npm install mssql</pre>
+                            <p>Here’s an example of setup code:</p>
                         </div>
                         <div class="blog-bottom">
                             <ul class="share">
