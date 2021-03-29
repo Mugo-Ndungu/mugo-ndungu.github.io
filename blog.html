@@ -242,15 +242,21 @@
                                     <li class="ml-3" style="margin-left: 20px;"><i class="far mr-1 fa-dot-circle"></i><a
                                             href="http://knexjs.org/"><strong>Website</strong></a></li>
                                     <li class="ml-3" style="margin-left: 20px;"><i class="far mr-1 fa-dot-circle"></i><a
-                                            href="https://github.com/knex/knex"><strong>GitHub</strong></a>: Used by 158.6k</li>
+                                            href="https://github.com/knex/knex"><strong>GitHub</strong></a>: Used by
+                                        158.6k</li>
                                     <li class="ml-3" style="margin-left: 20px;"><i
-                                            class="far mr-1 fa-dot-circle"></i><strong>Databases</strong>: Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift</li>
+                                            class="far mr-1 fa-dot-circle"></i><strong>Databases</strong>: Postgres,
+                                        MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift</li>
                                 </ul>
                             </p>
-                            <p>Knex.js is currently the most mature JavaScript SQL Query builder that can run in both Node.js and the browser (via webpack or Browserify). It’s capable of generating highly performant SQL queries that are on par with manually written SQL statements.</p>
+                            <p>Knex.js is currently the most mature JavaScript SQL Query builder that can run in both
+                                Node.js and the browser (via webpack or Browserify). It’s capable of generating highly
+                                performant SQL queries that are on par with manually written SQL statements.</p>
                             <p>So what’s a Query Builder?</p>
-                            <p>It’s simply an API that provides a set of functions that can be chained together to form a query. Here’s an example:</p>
-                            <div><pre>knex({ a: 'table', b: 'table' })
+                            <p>It’s simply an API that provides a set of functions that can be chained together to form
+                                a query. Here’s an example:</p>
+                            <div>
+                                <pre>knex({ a: 'table', b: 'table' })
                                 .select({
                                   aTitle: 'a.title',
                                   bTitle: 'b.title'
@@ -259,7 +265,10 @@
                               
                               SQL Output:
                               select `a`.`title` as `aTitle`, `b`.`title` as `bTitle` from `table`
-                              as `a`, `table</pre></div>
+                              as `a`, `table</pre>
+                            </div>
+                            <p>This begs the question of why should one use a Query Builder instead of writing raw SQL
+                                statements. I’ll give you four reasons:</p>
                         </div>
                         <div class="blog-bottom">
                             <ul class="share">
