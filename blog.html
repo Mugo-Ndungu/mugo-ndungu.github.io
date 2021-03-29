@@ -250,7 +250,16 @@
                             <p>Knex.js is currently the most mature JavaScript SQL Query builder that can run in both Node.js and the browser (via webpack or Browserify). It’s capable of generating highly performant SQL queries that are on par with manually written SQL statements.</p>
                             <p>So what’s a Query Builder?</p>
                             <p>It’s simply an API that provides a set of functions that can be chained together to form a query. Here’s an example:</p>
-                            <div id="snipplr_embed_342435" class="snipplr_embed">    <a href="https://snipplr.com/view/342435">Code snippet        - Knex Javascript Snippet </a> on Snipplr</div><script type="text/javascript" src="https://snipplr.com/js/embed.js?v3"></script><script type="text/javascript" src="https://snipplr.com/json/342435"></script>
+                            <div><pre>knex({ a: 'table', b: 'table' })
+                                .select({
+                                  aTitle: 'a.title',
+                                  bTitle: 'b.title'
+                                })
+                                .whereRaw('?? = ??', ['a.column_1', 'b.column_2'])
+                              
+                              SQL Output:
+                              select `a`.`title` as `aTitle`, `b`.`title` as `bTitle` from `table`
+                              as `a`, `table</pre></div>
                         </div>
                         <div class="blog-bottom">
                             <ul class="share">
