@@ -532,7 +532,7 @@
               </h3>
 
               <a
-                href="./assets/images/resume.pdf"
+                href="assets\resume\Alex Mugo - Senior Data Scientist (Specializing in Data Visualization).pdf"
                 class="w-max primary-btn bg1-color fw-medium n1-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto"
                 download
               >
