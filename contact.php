@@ -100,7 +100,7 @@
           <div>
             <div
               class="d-flex flex-column gap-8 justify-content-center align-items-center mt-6">
-              <a href="index.php" class="side-icon p1-color bgn2-color brn4">
+              <a href="index.html" class="side-icon p1-color bgn2-color brn4">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="11"
@@ -205,7 +205,7 @@
                 <ul class="d-flex flex-column gap-3">
                   <li class="rounded-3 bg1-color">
                     <a
-                      href="index.php"
+                      href="index.html"
                       class="d-flex align-items-center gap-2 n11-color fs-eight px-3 py-2"><i class="ph ph-user fs-six"></i> About Me</a>
                   </li>
 
@@ -265,7 +265,7 @@
       <!-- top header  -->
       <div
         class="w-100 bgn1-color p-3 position-fixed z-3 top-0 d-lg-none d-flex align-items-center justify-content-between br-bottom-n5 box-shadow1">
-        <a href="index.php" class="side-icon bgn2-color brn4">
+        <a href="index.html" class="side-icon bgn2-color brn4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="11"
@@ -333,7 +333,7 @@
           <ul class="d-flex gap-1 align-items-center justify-content-between">
             <li>
               <a
-                href="index.php"
+                href="index.html"
                 class="d-flex align-items-center gap-2 n5-color fs-eight p-2">
                 <span
                   class="fs-five d-flex align-items-center justify-content-center">
@@ -633,7 +633,7 @@
             href="https://themeforest.net/user/uiaxis"
             class="fs-eight fw-medium n5-color">UIAXIS</a></span>
         <span class="fs-eight fw-medium n5-color order-sm-1">Copyright © 2024
-          <a href="index.php" class="fs-eight fw-medium n5-color">Portfolify</a>. All Rights Reserved.</span>
+          <a href="index.html" class="fs-eight fw-medium n5-color">Portfolify</a>. All Rights Reserved.</span>
       </section>
       <!-- footer section end -->
     </div>
