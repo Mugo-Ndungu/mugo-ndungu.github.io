@@ -1781,7 +1781,23 @@
         <!-- footer section end -->
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const currentPath = window.location.pathname.split("/").pop(); // Get current file name
+        const menuItems = document.querySelectorAll(".menu-list ul li a"); // Select all sidebar links
 
+        menuItems.forEach(item => {
+          const linkPath = item.getAttribute("href");
+          if (currentPath === linkPath) {
+            item.parentElement.classList.add("bg1-color"); // Highlight active tab
+            item.classList.add("n11-color"); // Adjust color for active tab
+          } else {
+            item.parentElement.classList.remove("bg1-color"); // Remove highlight
+            item.classList.remove("n11-color"); // Revert color
+          }
+        });
+      });
+    </script>
     <!-- script js  -->
     <script src="./assets/js/plugins/plugins.js"></script>
     <script src="./assets/js/main.js"></script>

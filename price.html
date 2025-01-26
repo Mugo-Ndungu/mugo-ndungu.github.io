@@ -13,11 +13,6 @@
       name="description"
       content="Protfolily - Responsive Personal Portfolio & Resume HTML Template"
     />
-    <!-- swiper  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
     <!-- #title -->
     <title>Portfolify - Personal Portfolio & Resume HTML Template</title>
     <!-- #favicon -->
@@ -30,8 +25,17 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- AOS  -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- swiper  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- ICON  -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- don't remove this  -->
@@ -300,7 +304,6 @@
       </div>
       <!-- sidebar end -->
 
-      <!-- main content -->
       <div class="main-content w-100">
         <!-- top header  -->
         <div
@@ -374,6 +377,7 @@
             </button>
           </div>
         </div>
+
         <!-- bottom header  -->
         <div
           class="w-100 bgn1-color p-3 position-fixed z-3 bottom-0 d-block d-lg-none br-top-n5 box-shadow1"
@@ -414,10 +418,10 @@
                   >
                 </a>
               </li>
-              <li>
+              <li class="rounded-3 bg1-color">
                 <a
                   href="price.php"
-                  class="d-flex align-items-center gap-2 n5-color fs-eight p-2"
+                  class="d-flex align-items-center gap-2 n11-color fs-eight p-2"
                 >
                   <span
                     class="fs-five d-flex align-items-center justify-content-center"
@@ -452,10 +456,10 @@
                   <span class="d-none d-md-block">Products</span>
                 </a>
               </li>
-              <li class="rounded-3 bg1-color">
+              <li>
                 <a
                   href="blog.php"
-                  class="d-flex align-items-center gap-2 n11-color fs-eight p-2"
+                  class="d-flex align-items-center gap-2 n5-color fs-eight p-2"
                 >
                   <span
                     class="fs-five d-flex align-items-center justify-content-center"
@@ -518,285 +522,424 @@
           </div>
         </div>
 
-        <!-- Latest Blog Posts section start -->
-        <section class="pt-120 pb-120 mt-10 mt-lg-0">
+        <!-- Services & Pricing section start -->
+        <section class="pt-120 pb-120 br-bottom-n3 mt-10 mt-lg-0">
           <div class="pb-60 br-bottom-n3">
-            <div class="container">
-              <div data-aos="zoom-in" class="page-heading">
-                <h3
-                  class="page-title fs-onefw-semibold n5-color mb-2 mb-md-3 text-center"
-                >
-                  A Blog About Software Development And Life
-                </h3>
-                <p class="fs-seven n5-color mb-4 mb-md-8 text-center">
-                  Welcome to my blog. Subscribe and get my latest blog post in
-                  your inbox.
-                </p>
-                <form class="d-flex flex-wrap flex-sm-nowrap gap-3 gap-md-6">
-                  <input
-                    placeholder="Enter your email"
-                    class="brn4 px-4 px-md-8 py-2 py-md-4 rounded-pill n5-color"
-                  />
-                  <button
-                    class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto h-100 flex-shrink-0"
-                  >
-                    <i class="ph ph-paper-plane-tilt"></i>Subscribe
-                  </button>
-                </form>
-              </div>
+            <div data-aos="zoom-in" class="page-heading">
+              <h3
+                class="page-title fs-onefw-semibold n5-color mb-2 mb-md-3 text-center"
+              >
+                Services & Pricing
+              </h3>
+              <p class="fs-seven n5-color mb-4 mb-md-8 text-center">
+                I have 10+ years of development experience building software for
+                the web and mobile devices. You can take a look at my
+                <a href="resume.php" class="p1-color">online resume</a> and
+                <a href="portfolio.php" class="p1-color">project portfolio</a>
+                to find out more about my skills and experiences.
+              </p>
+
+              <a
+                href="contact.php"
+                class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto w-max"
+              >
+                <i class="ph ph-paper-plane-tilt"></i>Hire Me
+              </a>
             </div>
           </div>
 
-          <!-- blog card  -->
-          <div class="container">
-            <div class="row g-5 g-md-10 mt-5">
-              <div
-                data-aos="fade-up"
-                data-aos-duration="700"
-                class="col-sm-6 col-xxl-4"
-              >
-                <a href="blog_details.php" class="blog-card">
-                  <div class="blog-img rounded-3 overflow-hidden">
-                    <img
-                      src="./assets/images/blog1.png"
-                      alt="blog"
-                      class="rounded-3 w-full"
-                    />
-                  </div>
-                  <div class="pt-4 pt-md-8 px-3 px-md-5">
-                    <div class="d-flex align-items-center gap-3 mb-2 mb-md-3">
-                      <span class="n4-color fs-eight">March 18, 2024</span>
-                      <span class="p1-color fs-eight">/</span>
-                      <span class="n4-color fs-eight">Articles</span>
-                    </div>
-                    <h4 class="blog-title fs-five n5-color fw-semibold">
-                    Top Data Analysis Tools for Beginners in 2024
-                    </h4>
-                  </div>
-                </a>
+          <div class="container mt-8 mt-md-15">
+            <div data-aos="zoom-in" class="section-heading">
+              <div class="d-flex align-items-center gap-2">
+                <div class="title-line"></div>
+                <h2 class="display-four n5-color fw-semibold">
+                  Service Packages
+                </h2>
               </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="800"
-                class="col-sm-6 col-xxl-4"
-              >
-                <a href="blog_details.php" class="blog-card">
-                  <div class="blog-img rounded-3 overflow-hidden">
-                    <img
-                      src="./assets/images/blog2.png"
-                      alt="blog"
-                      class="rounded-3 w-full"
-                    />
+              <p class="fs-seven n4-color mt-2 mt-md-4">
+                Explore the range of services I provide to help bring your
+                projects to life. From initial concept to final delivery, I am
+                committed to delivering high-quality results tailored to your
+                needs.
+              </p>
+            </div>
+
+            <div class="mt-8 mt-md-15">
+              <div class="row g-6">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="700"
+                  class="col-sm-6 col-xl-4"
+                >
+                  <div
+                    class="pricing-card bgn2-color brn4 px-3 px-md-6 py-4 py-md-8 text-center"
+                  >
+                    <span class="fs-eight n5-color">Basic</span>
+                    <h3 class="p1-color fs-two">$900</h3>
+                    <span class="fs-eight n5-color">Per Month</span>
+                    <div class="line-divider my-4 my-md-7"></div>
+                    <ul>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >Web Development
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >UI/UX Design
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >Webflow Development
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >Website Optimization
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >24/7 Support
+                      </li>
+                    </ul>
+
+                    <a
+                      href="javascript:void(0)"
+                      class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto mt-5 mt-md-10 w-max"
+                    >
+                      <i class="ph ph-arrow-right"></i>Choose Basic
+                    </a>
                   </div>
-                  <div class="pt-4 pt-md-8 px-3 px-md-5">
-                    <div class="d-flex align-items-center gap-3 mb-2 mb-md-3">
-                      <span class="n4-color fs-eight">June 14, 2024</span>
-                      <span class="p1-color fs-eight">/</span>
-                      <span class="n4-color fs-eight">Tutorials</span>
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="800"
+                  class="col-sm-6 col-xl-4"
+                >
+                  <div
+                    class="pricing-card bgn2-color brn4 px-3 px-md-6 py-4 py-md-8 text-center overflow-hidden position-relative"
+                  >
+                    <div
+                      class="popular-price px-2 px-md-5 py-1 py-md-3 py-xl-2 py-xxl-3"
+                    >
+                      <span class="fs-seven n1-color">Most popular</span>
                     </div>
-                    <h4 class="blog-title fs-five n5-color fw-semibold">
-                    Mastering SQL: Essential Tips for Data Analysts
-                    </h4>
+
+                    <span class="fs-eight n5-color">Standard</span>
+                    <h3 class="p1-color fs-two">$2500</h3>
+                    <span class="fs-eight n5-color">Per Month</span>
+                    <div class="line-divider my-4 my-md-7"></div>
+                    <ul>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >Web Development
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >UI/UX Design
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >Webflow Development
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >Website Optimization
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >24/7 Support
+                      </li>
+                    </ul>
+
+                    <a
+                      href="javascript:void(0)"
+                      class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto mt-5 mt-md-10 w-max"
+                    >
+                      <i class="ph ph-arrow-right"></i>Choose Standard
+                    </a>
                   </div>
-                </a>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="900"
-                class="col-sm-6 col-xxl-4"
-              >
-                <a href="blog_details.php" class="blog-card">
-                  <div class="blog-img rounded-3 overflow-hidden">
-                    <img
-                      src="./assets/images/blog3.png"
-                      alt="blog"
-                      class="rounded-3 w-full"
-                    />
+                </div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="900"
+                  class="col-sm-6 col-xl-4"
+                >
+                  <div
+                    class="pricing-card bgn2-color brn4 px-3 px-md-6 py-4 py-md-8 text-center"
+                  >
+                    <span class="fs-eight n5-color">Premium</span>
+                    <h3 class="p1-color fs-two">$5000</h3>
+                    <span class="fs-eight n5-color">Per Month</span>
+                    <div class="line-divider my-4 my-md-7"></div>
+                    <ul>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >Web Development
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >UI/UX Design
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >Webflow Development
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >Website Optimization
+                      </li>
+                      <li
+                        class="d-flex gap-3 align-items-center n5-color mb-2 mb-md-3"
+                      >
+                        <i class="ph-fill ph-check-circle fs-six p1-color"></i
+                        >24/7 Support
+                      </li>
+                    </ul>
+
+                    <a
+                      href="javascript:void(0)"
+                      class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto mt-5 mt-md-10 w-max"
+                    >
+                      <i class="ph ph-arrow-right"></i>Choose Premium
+                    </a>
                   </div>
-                  <div class="pt-4 pt-md-8 px-3 px-md-5">
-                    <div class="d-flex align-items-center gap-3 mb-2 mb-md-3">
-                      <span class="n4-color fs-eight">March 18, 2024</span>
-                      <span class="p1-color fs-eight">/</span>
-                      <span class="n4-color fs-eight">Articles</span>
-                    </div>
-                    <h4 class="blog-title fs-five n5-color fw-semibold">
-                    The Ultimate Guide to Data Visualization with Tableau
-                    </h4>
-                  </div>
-                </a>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                class="col-sm-6 col-xxl-4"
-              >
-                <a href="blog_details.php" class="blog-card">
-                  <div class="blog-img rounded-3 overflow-hidden">
-                    <img
-                      src="./assets/images/blog4.png"
-                      alt="blog"
-                      class="rounded-3 w-full"
-                    />
-                  </div>
-                  <div class="pt-4 pt-md-8 px-3 px-md-5">
-                    <div class="d-flex align-items-center gap-3 mb-2 mb-md-3">
-                      <span class="n4-color fs-eight">May 22, 2024</span>
-                      <span class="p1-color fs-eight">/</span>
-                      <span class="n4-color fs-eight">Articles</span>
-                    </div>
-                    <h4 class="blog-title fs-five n5-color fw-semibold">
-                    How to Use Power BI for Effective Data Analysis
-                    </h4>
-                  </div>
-                </a>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1100"
-                class="col-sm-6 col-xxl-4"
-              >
-                <a href="blog_details.php" class="blog-card">
-                  <div class="blog-img rounded-3 overflow-hidden">
-                    <img
-                      src="./assets/images/blog5.png"
-                      alt="blog"
-                      class="rounded-3 w-full"
-                    />
-                  </div>
-                  <div class="pt-4 pt-md-8 px-3 px-md-5">
-                    <div class="d-flex align-items-center gap-3 mb-2 mb-md-3">
-                      <span class="n4-color fs-eight">July 17, 2024</span>
-                      <span class="p1-color fs-eight">/</span>
-                      <span class="n4-color fs-eight">Tutorials</span>
-                    </div>
-                    <h4 class="blog-title fs-five n5-color fw-semibold">
-                    Leveraging Predictive Analytics for Business Success
-                    </h4>
-                  </div>
-                </a>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1200"
-                class="col-sm-6 col-xxl-4"
-              >
-                <a href="blog_details.php" class="blog-card">
-                  <div class="blog-img rounded-3 overflow-hidden">
-                    <img
-                      src="./assets/images/blog6.png"
-                      alt="blog"
-                      class="rounded-3 w-full"
-                    />
-                  </div>
-                  <div class="pt-4 pt-md-8 px-3 px-md-5">
-                    <div class="d-flex align-items-center gap-3 mb-2 mb-md-3">
-                      <span class="n4-color fs-eight">June 11, 2024</span>
-                      <span class="p1-color fs-eight">/</span>
-                      <span class="n4-color fs-eight">Articles</span>
-                    </div>
-                    <h4 class="blog-title fs-five n5-color fw-semibold">
-                    The Role of Business Intelligence in Modern Enterprises
-                    </h4>
-                  </div>
-                </a>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1300"
-                class="col-sm-6 col-xxl-4"
-              >
-                <a href="blog_details.php" class="blog-card">
-                  <div class="blog-img rounded-3 overflow-hidden">
-                    <img
-                      src="./assets/images/blog7.png"
-                      alt="blog"
-                      class="rounded-3 w-full"
-                    />
-                  </div>
-                  <div class="pt-4 pt-md-8 px-3 px-md-5">
-                    <div class="d-flex align-items-center gap-3 mb-2 mb-md-3">
-                      <span class="n4-color fs-eight">March 25, 2024</span>
-                      <span class="p1-color fs-eight">/</span>
-                      <span class="n4-color fs-eight">Articles</span>
-                    </div>
-                    <h4 class="blog-title fs-five n5-color fw-semibold">
-                    Enhancing Data-Driven Decision Making with Advanced Analytics
-                    </h4>
-                  </div>
-                </a>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1400"
-                class="col-sm-6 col-xxl-4"
-              >
-                <a href="blog_details.php" class="blog-card">
-                  <div class="blog-img rounded-3 overflow-hidden">
-                    <img
-                      src="./assets/images/blog8.png"
-                      alt="blog"
-                      class="rounded-3 w-full"
-                    />
-                  </div>
-                  <div class="pt-4 pt-md-8 px-3 px-md-5">
-                    <div class="d-flex align-items-center gap-3 mb-2 mb-md-3">
-                      <span class="n4-color fs-eight">May 10, 2024</span>
-                      <span class="p1-color fs-eight">/</span>
-                      <span class="n4-color fs-eight">Tutorials</span>
-                    </div>
-                    <h4 class="blog-title fs-five n5-color fw-semibold">
-                    Trends in Data Analysis: What to Expect in 2024
-                    </h4>
-                  </div>
-                </a>
-              </div>
-              <div
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                class="col-sm-6 col-xxl-4"
-              >
-                <a href="blog_details.php" class="blog-card">
-                  <div class="blog-img rounded-3 overflow-hidden">
-                    <img
-                      src="./assets/images/blog3.png"
-                      alt="blog"
-                      class="rounded-3 w-full"
-                    />
-                  </div>
-                  <div class="pt-4 pt-md-8 px-3 px-md-5">
-                    <div class="d-flex align-items-center gap-3 mb-2 mb-md-3">
-                      <span class="n4-color fs-eight">April 13, 2024</span>
-                      <span class="p1-color fs-eight">/</span>
-                      <span class="n4-color fs-eight">Articles</span>
-                    </div>
-                    <h4 class="blog-title fs-five n5-color fw-semibold">
-                    Building a Career in Data Analysis: Tips and Strategies
-                    </h4>
-                  </div>
-                </a>
+                </div>
               </div>
             </div>
-            <div
-              data-aos="zoom-in-up"
-              class="d-flex gap-4 gap-md-8 justify-content-center mt-8 mt-md-15"
-            >
-              <div class="pagination-countainer brn4 n5-color">
-                <i class="ph-bold ph-caret-left"></i>
+
+            <div data-aos="zoom-in" class="hire-content mt-8 mt-md-15">
+              <h4
+                class="n5-color fs-three fw-semibold text-center mb-2 mb-md-4"
+              >
+                Want to hire me for custom package?
+              </h4>
+              <p class="fs-seven n5-color mb-4 mb-md-8 text-center">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+              <a
+                href="contact.php"
+                class="w-max primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto"
+              >
+                <i class="ph ph-paper-plane-tilt"></i>Hire Me
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- Services & Pricing section end -->
+
+        <!-- Have any questions section start -->
+        <section class="pt-120 pb-120">
+          <div class="container">
+            <div data-aos="zoom-in" class="section-heading">
+              <div class="d-flex align-items-center gap-2">
+                <div class="title-line"></div>
+                <h2 class="display-four n5-color fw-semibold">
+                  Have any questions?
+                </h2>
               </div>
-              <div class="d-flex gap-2 align-items-center">
-                <div class="pagination-countainer brn4 pagination-active">
-                  01
+              <p class="fs-seven n4-color mt-2 mt-md-4">
+                You can use this section to address any queries your potential
+                clients may have.
+              </p>
+            </div>
+            <div class="row mt-8 mt-md-15 justify-content-between g-6">
+              <div class="col-12 col-md-12 col-xl-6">
+                <div class="accordion-section d-grid gap-2 gap-md-4">
+                  <div class="accordion-single" data-aos="fade-up">
+                    <h5 class="header-area p-2 p-sm-4 p-md-8">
+                      <button
+                        class="accordion-btn n4-color d-flex gap-2 align-items-center position-relative w-100 fs-six fw-medium"
+                        type="button"
+                      >
+                        <span
+                          class="faq_icon_width d-flex flex-shrink-0 align-items-center justify-content-between n2-color"
+                        >
+                          <i class="ph ph-arrow-right"></i>
+                        </span>
+                        What is Portfolify
+                      </button>
+                    </h5>
+                    <div class="content-area overflow-hidden">
+                      <p
+                        class="content-body n5-color px-4 px-md-8 pb-4 pb-md-8 fs-six"
+                      >
+                        This is the first item's accordion body. It is hidden by
+                        default, until the collapse plugin adds the appropriate
+                        classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing
+                        and hiding via CSS transitions. You can modify any of
+                        this with custom CSS or overriding our default
+                        variables. It's also worth noting that just about any
+                        HTML can go within the .accordion-body, though the
+                        transition does limit overflow.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-single" data-aos="fade-up">
+                    <h5 class="header-area p-2 p-sm-4 p-md-8">
+                      <button
+                        class="accordion-btn n4-color d-flex gap-2 align-items-center position-relative w-100 fs-six fw-medium"
+                        type="button"
+                      >
+                        <span
+                          class="faq_icon_width d-flex flex-shrink-0 align-items-center justify-content-between n2-color"
+                        >
+                          <i class="ph ph-arrow-right"></i>
+                        </span>
+                        How Can I Help You?
+                      </button>
+                    </h5>
+                    <div class="content-area overflow-hidden">
+                      <p
+                        class="content-body n5-color px-4 px-md-8 pb-4 pb-md-8 fs-six"
+                      >
+                        This is the first item's accordion body. It is hidden by
+                        default, until the collapse plugin adds the appropriate
+                        classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing
+                        and hiding via CSS transitions. You can modify any of
+                        this with custom CSS or overriding our default
+                        variables. It's also worth noting that just about any
+                        HTML can go within the .accordion-body, though the
+                        transition does limit overflow.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-single" data-aos="fade-up">
+                    <h5 class="header-area p-2 p-sm-4 p-md-8">
+                      <button
+                        class="accordion-btn n4-color d-flex gap-1 gap-sm-2 align-items-center position-relative w-100 fs-six fw-medium"
+                        type="button"
+                      >
+                        <span
+                          class="faq_icon_width d-flex flex-shrink-0 align-items-center justify-content-between n2-color"
+                        >
+                          <i class="ph ph-arrow-right"></i>
+                        </span>
+                        Simple process for workflow?
+                      </button>
+                    </h5>
+                    <div class="content-area overflow-hidden">
+                      <p
+                        class="content-body n5-color px-4 px-md-8 pb-4 pb-md-8 fs-six"
+                      >
+                        This is the first item's accordion body. It is hidden by
+                        default, until the collapse plugin adds the appropriate
+                        classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing
+                        and hiding via CSS transitions. You can modify any of
+                        this with custom CSS or overriding our default
+                        variables. It's also worth noting that just about any
+                        HTML can go within the .accordion-body, though the
+                        transition does limit overflow.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-single" data-aos="fade-up">
+                    <h5 class="header-area p-2 p-sm-4 p-md-8">
+                      <button
+                        class="accordion-btn n4-color d-flex gap-2 align-items-center position-relative w-100 fs-six fw-medium"
+                        type="button"
+                      >
+                        <span
+                          class="faq_icon_width d-flex flex-shrink-0 align-items-center justify-content-between n2-color"
+                        >
+                          <i class="ph ph-arrow-right"></i>
+                        </span>
+                        Is Portfolify a Multi-purpose template?
+                      </button>
+                    </h5>
+                    <div class="content-area overflow-hidden">
+                      <p
+                        class="content-body n5-color px-4 px-md-8 pb-4 pb-md-8 fs-six"
+                      >
+                        This is the first item's accordion body. It is hidden by
+                        default, until the collapse plugin adds the appropriate
+                        classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing
+                        and hiding via CSS transitions. You can modify any of
+                        this with custom CSS or overriding our default
+                        variables. It's also worth noting that just about any
+                        HTML can go within the .accordion-body, though the
+                        transition does limit overflow.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="accordion-single" data-aos="fade-up">
+                    <h5 class="header-area p-2 p-sm-4 p-md-8">
+                      <button
+                        class="accordion-btn n4-color d-flex gap-2 align-items-center position-relative w-100 fs-six fw-medium"
+                        type="button"
+                      >
+                        <span
+                          class="faq_icon_width d-flex flex-shrink-0 align-items-center justify-content-between n2-color"
+                        >
+                          <i class="ph ph-arrow-right"></i>
+                        </span>
+                        Why responsive multi page template?
+                      </button>
+                    </h5>
+                    <div class="content-area overflow-hidden">
+                      <p
+                        class="content-body n5-color px-4 px-md-8 pb-4 pb-md-8 fs-six"
+                      >
+                        This is the first item's accordion body. It is hidden by
+                        default, until the collapse plugin adds the appropriate
+                        classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing
+                        and hiding via CSS transitions. You can modify any of
+                        this with custom CSS or overriding our default
+                        variables. It's also worth noting that just about any
+                        HTML can go within the .accordion-body, though the
+                        transition does limit overflow.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="pagination-countainer brn4 n5-color">02</div>
-                <div class="pagination-countainer brn4 n5-color">03</div>
               </div>
-              <div class="pagination-countainer brn4 n5-color">
-                <i class="ph-bold ph-caret-right"></i>
+              <div class="col-12 col-md-12 col-xl-6">
+                <div
+                  class="overflow-hidden d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./assets/images/light.png"
+                    alt="light"
+                    class="faq-light"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </section>
-        <!-- Latest Blog Posts section end -->
+        <!-- Have any questions section end -->
 
         <!-- footer section start -->
         <section
@@ -820,12 +963,33 @@
         <!-- footer section end -->
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const currentPath = window.location.pathname.split("/").pop(); // Get current file name
+        const menuItems = document.querySelectorAll(".menu-list ul li a"); // Select all sidebar links
 
+        menuItems.forEach(item => {
+          const linkPath = item.getAttribute("href");
+          if (currentPath === linkPath) {
+            item.parentElement.classList.add("bg1-color"); // Highlight active tab
+            item.classList.add("n11-color"); // Adjust color for active tab
+          } else {
+            item.parentElement.classList.remove("bg1-color"); // Remove highlight
+            item.classList.remove("n11-color"); // Revert color
+          }
+        });
+      });
+    </script>
     <!-- script js  -->
     <script src="./assets/js/plugins/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
     <!-- swiper js  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- email js  -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
