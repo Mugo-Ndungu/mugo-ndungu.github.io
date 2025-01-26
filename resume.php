@@ -1,0 +1,1040 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- #keywords -->
+    <meta
+      name="keywords"
+      content="boot, Bootstrap, Personal, Protfolily HTML Template"
+    />
+    <!-- #description -->
+    <meta
+      name="description"
+      content="Protfolily - Responsive Personal Portfolio & Resume HTML Template"
+    />
+    <!-- #title -->
+    <title>Portfolify - Personal Portfolio & Resume HTML Template</title>
+    <!-- #favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <!-- ==== css dependencies start ==== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- swiper  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- ICON  -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- pdf-download  -->
+  </head>
+  <body>
+    <!-- don't remove this  -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="11"
+      height="15"
+      viewBox="0 0 11 15"
+      fill="none"
+      class="d-none"
+    >
+      <g clip-path="url(#clip0_3569_434)">
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M5.69145 8.43063L1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L5.69145 10.9887V8.43063Z"
+          fill="rgba(var(--p1))"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L1.72801 5.49387Z"
+          fill="rgba(var(--p1))"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M4.86328 6.5702L8.82672 9.5065L4.86328 12.4606V15.0004L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"
+          fill="rgba(var(--p1))"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M4.86328 6.5702L8.82672 9.5065L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"
+          fill="rgba(var(--p1))"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M8.72466 2.00391C9.52091 2.00391 10.1657 2.64912 10.1657 3.44491C10.1657 4.24115 9.52091 4.88591 8.72466 4.88591C7.92841 4.88591 7.2832 4.2407 7.2832 3.44491C7.2832 2.64912 7.92841 2.00391 8.72466 2.00391Z"
+          fill="rgba(var(--p1))"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M1.83013 12.9972C1.03388 12.9972 0.388672 12.352 0.388672 11.5562C0.388672 10.7604 1.03388 10.1152 1.82967 10.1152C2.62546 10.1152 3.27067 10.76 3.27067 11.5562C3.27067 12.3525 2.62592 12.9972 1.82967 12.9972H1.83013Z"
+          fill="rgba(var(--p1))"
+        />
+      </g>
+      <defs>
+        <clipPath>
+          <rect width="10.5561" height="15" fill="white" />
+        </clipPath>
+      </defs>
+    </svg>
+    <!-- preloder  srart -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <!-- preloder  end -->
+
+    <div class="d-flex gap-6">
+      <!-- sidebar start -->
+      <div class="side-menu">
+        <!-- sidebar-btn  -->
+        <div class="sidebar-btn close-btn cursor-pointer d-block d-lg-none">
+          <i class="ph ph-x fs-two p1-color"></i>
+        </div>
+
+        <div class="d-flex">
+          <div class="side-menu-left">
+            <div>
+              <div
+                class="d-flex flex-column gap-8 justify-content-center align-items-center mt-6"
+              >
+                <a href="index.php" class="side-icon p1-color bgn2-color brn4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="11"
+                    height="15"
+                    viewBox="0 0 11 15"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_3569_434)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.69145 8.43063L1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L5.69145 10.9887V8.43063Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L1.72801 5.49387Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.86328 6.5702L8.82672 9.5065L4.86328 12.4606V15.0004L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.86328 6.5702L8.82672 9.5065L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M8.72466 2.00391C9.52091 2.00391 10.1657 2.64912 10.1657 3.44491C10.1657 4.24115 9.52091 4.88591 8.72466 4.88591C7.92841 4.88591 7.2832 4.2407 7.2832 3.44491C7.2832 2.64912 7.92841 2.00391 8.72466 2.00391Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.83013 12.9972C1.03388 12.9972 0.388672 12.352 0.388672 11.5562C0.388672 10.7604 1.03388 10.1152 1.82967 10.1152C2.62546 10.1152 3.27067 10.76 3.27067 11.5562C3.27067 12.3525 2.62592 12.9972 1.82967 12.9972H1.83013Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath>
+                        <rect width="10.5561" height="15" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+                <a href="checkout.php" class="position-relative">
+                  <div class="side-icon bg1-color">
+                    <i class="ph ph-shopping-cart n11-color"></i>
+                  </div>
+                  <div class="cart-counter">
+                    <span class="n1-color">02</span>
+                  </div>
+                </a>
+                <div class="d-flex flex-column align-items-center gap-1">
+                  <span class="toggle_name fs-eleven n5-color">DarkMode</span>
+                  <button class="side-icon bg1-color mood_toggle">
+                    <i class="mood_icon ph-fill ph-moon fs-six n11-color"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="side-menu-right overflow-y-auto">
+            <div
+              class="d-flex flex-column gap-6 justify-content-between py-10 px-5 bgn2-color h-100"
+            >
+              <div class="">
+                <div class="sidebar-profile">
+                  <div class="position-relative">
+                    <div
+                      class="profile-img1 d-flex justify-content-center overflow-hidden"
+                    >
+                      <img
+                        src="./assets/images/LinkedIn Profile Picture.png"
+                        alt="user"
+                        class=""
+                      />
+                    </div>
+                    <span class="thumb">👋</span>
+                  </div>
+
+                  <h4 class="n5-color fw-semibold fs-five mt-2 text-center">
+                    Alex Mugo
+                  </h4>
+                  <span class="n5-color fs-nine d-block text-center"
+                    >Data Analyst</span
+                  >
+                  <div
+                    class="d-flex justify-content-center gap-2 align-items-center mt-4"
+                  >
+                    <a href="javascript:void(0)" class="social-icon p1-color">
+                      <i class="ph ph-facebook-logo"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="social-icon p1-color">
+                      <i class="ph ph-instagram-logo"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="social-icon p1-color">
+                      <i class="ph ph-x-logo"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="social-icon p1-color">
+                      <i class="ph ph-linkedin-logo"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="line-divider my-4 my-md-8"></div>
+
+                <div class="menu-list">
+                  <ul class="d-flex flex-column gap-3">
+                    <li class="rounded-3 bg1-color">
+                      <a
+                        href="index.php"
+                        class="d-flex align-items-center gap-2 n11-color fs-eight px-3 py-2"
+                        ><i class="ph ph-user fs-six"></i> About Me</a
+                      >
+                    </li>
+
+                    <li class="rounded-3">
+                      <a
+                        href="portfolio.php"
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"
+                        >
+                          <i class="ph ph-code-block fs-six"></i> Portfolio
+                        </div>
+                        <span
+                          class="n5-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3"
+                          >16</span
+                        >
+                      </a>
+                    </li>
+                    <li class="rounded-3">
+                      <a
+                        href="price.php"
+                        class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"
+                        ><i class="ph ph-briefcase fs-six"></i>Services &
+                        Pricing</a
+                      >
+                    </li>
+                    <li class="rounded-3">
+                      <a
+                        href="resume.php"
+                        class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"
+                        ><i class="ph ph-notebook fs-six"></i> Resume</a
+                      >
+                    </li>
+                    <li class="rounded-3">
+                      <a
+                        href="products.php"
+                        class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"
+                        ><i class="ph ph-shopping-bag fs-six"></i>Products</a
+                      >
+                    </li>
+                    <li class="rounded-3">
+                      <a
+                        href="blog.php"
+                        class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"
+                        ><i class="ph ph-newspaper-clipping fs-six"></i>Blog</a
+                      >
+                    </li>
+                    <li class="rounded-3">
+                      <a
+                        href="contact.php"
+                        class="d-flex align-items-center gap-2 n5-color fs-eight px-3 py-2"
+                        ><i class="ph ph-envelope fs-six"></i>Contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a
+                href="contact.php"
+                class="primary-btn fw-medium px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto"
+              >
+                <i class="ph ph-paper-plane-tilt"></i>Hire Me
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- sidebar end -->
+
+      <div class="main-content w-100">
+        <!-- top header  -->
+        <div
+          class="w-100 bgn1-color p-3 position-fixed z-3 top-0 d-lg-none d-flex align-items-center justify-content-between br-bottom-n5 box-shadow1"
+        >
+          <a href="index.php" class="side-icon bgn2-color brn4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="11"
+              height="15"
+              viewBox="0 0 11 15"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_3569_434)">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.69145 8.43063L1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L5.69145 10.9887V8.43063Z"
+                  fill="rgba(var(--p1))"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.72801 5.49387L5.69145 2.54023V0L0 4.21303V6.75919L1.72801 5.49387Z"
+                  fill="rgba(var(--p1))"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.86328 6.5702L8.82672 9.5065L4.86328 12.4606V15.0004L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"
+                  fill="rgba(var(--p1))"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.86328 6.5702L8.82672 9.5065L10.5552 10.7864V8.24163L4.86328 4.01172V6.5702Z"
+                  fill="rgba(var(--p1))"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.72466 2.00391C9.52091 2.00391 10.1657 2.64912 10.1657 3.44491C10.1657 4.24115 9.52091 4.88591 8.72466 4.88591C7.92841 4.88591 7.2832 4.2407 7.2832 3.44491C7.2832 2.64912 7.92841 2.00391 8.72466 2.00391Z"
+                  fill="rgba(var(--p1))"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.83013 12.9972C1.03388 12.9972 0.388672 12.352 0.388672 11.5562C0.388672 10.7604 1.03388 10.1152 1.82967 10.1152C2.62546 10.1152 3.27067 10.76 3.27067 11.5562C3.27067 12.3525 2.62592 12.9972 1.82967 12.9972H1.83013Z"
+                  fill="rgba(var(--p1))"
+                />
+              </g>
+              <defs>
+                <clipPath>
+                  <rect width="10.5561" height="15" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+
+          <div class="d-flex gap-3 align-items-center">
+            <a href="checkout.php" class="position-relative">
+              <div class="side-icon bg1-color">
+                <i class="ph ph-shopping-cart n11-color"></i>
+              </div>
+              <div class="cart-counter-header">
+                <span class="n1-color">02</span>
+              </div>
+            </a>
+            <button id="toggle" class="side-icon bg1-color mood_toggle">
+              <i class="mood_icon ph-fill ph-moon fs-six n11-color"></i>
+            </button>
+          </div>
+        </div>
+        <!-- bottom header  -->
+        <div
+          class="w-100 bgn1-color p-3 position-fixed z-3 bottom-0 d-block d-lg-none br-top-n5 box-shadow1"
+        >
+          <div class="header-bottom-menu w-full">
+            <ul class="d-flex gap-1 align-items-center justify-content-between">
+              <li>
+                <a
+                  href="index.php"
+                  class="d-flex align-items-center gap-2 n5-color fs-eight p-2"
+                >
+                  <span
+                    class="fs-five d-flex align-items-center justify-content-center"
+                  >
+                    <i class="ph-fill ph-user"></i>
+                  </span>
+                  <span class="d-none d-md-block">About Me</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="portfolio.php"
+                  class="d-flex justify-content-between align-items-center"
+                >
+                  <div
+                    class="d-flex align-items-center gap-2 n5-color fs-eight p-2"
+                  >
+                    <span
+                      class="fs-five d-flex align-items-center justify-content-center"
+                    >
+                      <i class="ph-fill ph-code-block"></i>
+                    </span>
+                    <span class="d-none d-md-block">Portfolio</span>
+                  </div>
+                  <span
+                    class="n5-color bg2-color fs-ten px-1 pt-1 rounded-2 me-3 d-none d-md-block"
+                    >16</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a
+                  href="price.php"
+                  class="d-flex align-items-center gap-2 n5-color fs-eight p-2"
+                >
+                  <span
+                    class="fs-five d-flex align-items-center justify-content-center"
+                  >
+                    <i class="ph-fill ph-briefcase"></i>
+                  </span>
+                  <span class="d-none d-md-block">Pricing</span>
+                </a>
+              </li>
+              <li class="rounded-3 bg1-color">
+                <a
+                  href="resume.php"
+                  class="d-flex align-items-center gap-2 n11-color fs-eight p-2"
+                >
+                  <span
+                    class="fs-five d-flex align-items-center justify-content-center"
+                    ><i class="ph-fill ph-notebook fs-six"></i
+                  ></span>
+                  <span class="d-none d-md-block">Resume</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="products.php"
+                  class="d-flex align-items-center gap-2 n5-color fs-eight p-2"
+                >
+                  <span
+                    class="fs-five d-flex align-items-center justify-content-center"
+                  >
+                    <i class="ph-fill ph-shopping-bag"></i>
+                  </span>
+                  <span class="d-none d-md-block">Products</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="blog.php"
+                  class="d-flex align-items-center gap-2 n5-color fs-eight p-2"
+                >
+                  <span
+                    class="fs-five d-flex align-items-center justify-content-center"
+                  >
+                    <i class="ph-fill ph-newspaper-clipping"></i>
+                  </span>
+                  <span class="d-none d-md-block">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="contact.php"
+                  class="d-flex align-items-center gap-2 n5-color fs-eight p-2"
+                >
+                  <span
+                    class="fs-five d-flex align-items-center justify-content-center"
+                    ><i class="ph-fill ph-envelope"></i
+                  ></span>
+                  <span class="d-none d-md-block">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- color palettes btns -->
+        <div class="color-switcher">
+          <button class="switcher-btn">
+            <i class="ph ph-gear-six"></i>
+          </button>
+          <div class="pallates box-shadow2 brn4">
+            <div class="d-flex gap-2">
+              <button
+                class="color-btn bg-color1"
+                data-color="120, 171, 168"
+              ></button>
+              <button
+                class="color-btn bg-color2"
+                data-color="255, 145, 251"
+              ></button>
+              <button
+                class="color-btn bg-color3"
+                data-color="253, 187, 46"
+              ></button>
+            </div>
+            <div class="d-flex gap-2 mt-2">
+              <button
+                class="color-btn bg-color4"
+                data-color=" 82, 113, 255"
+              ></button>
+              <button
+                class="color-btn bg-color5"
+                data-color=" 0, 255, 255"
+              ></button>
+              <button
+                class="color-btn bg-color6"
+                data-color="84, 182, 137"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resume section start -->
+        <section class="pt-120 pb-120 mt-10 mt-lg-0">
+          <div class="pb-60 br-bottom-n3">
+            <div data-aos="zoom-in" class="page-heading">
+              <h3
+                class="page-title fs-onefw-semibold n5-color mb-2 mb-md-3 text-center"
+              >
+                Online Resume
+              </h3>
+
+              <a
+                href="./assets/images/resume.pdf"
+                class="w-max primary-btn bg1-color fw-medium n1-color px-3 px-md-6 py-2 py-md-4 rounded-pill d-flex align-items-center gap-2 mx-auto"
+                download
+              >
+                <i class="ph ph-file-pdf"></i>Download PDF Version
+              </a>
+            </div>
+          </div>
+
+          <div class="container mt-8 mt-md-15">
+            <div
+              data-aos="fade-up"
+              class="bgn2-color p-4 p-sm-8 p-md-15 rounded-5 brn4"
+            >
+              <div
+                class="d-flex flex-wrap justify-content-between align-items-center gap-3 br-bottom-n3 pb-3 pb-md-6"
+              >
+                <div>
+                  <h2 class="display-three p1-color fw-semibold">
+                    Alex Mugo Ndung'u
+                  </h2>
+                  <span class="n4-color fs-six fw-medium"
+                    >Data Analyst | Python, Excel, SQL, Tableau, Power BI Specialist</span
+                  >
+                </div>
+                <div class="ps-5 br-left-n3">
+                  <ul class="d-flex flex-column gap-3">
+                    <li>
+                      <a
+                        href="tel:+6494461709"
+                        class="d-flex gap-2 align-items-center n4-color"
+                      >
+                        <i class="ph ph-phone"></i> +(254) 727 774 858</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="mailto:someone@example.com"
+                        class="d-flex gap-2 align-items-center n4-color"
+                      >
+                        <i class="ph ph-envelope-simple"></i
+                        >mugoa343@gmail.com</a
+                      >
+                    </li>
+                    <li class="d-flex gap-2 align-items-center n4-color">
+                      <i class="ph ph-globe"></i> <a href="https://mugo-ndungu.github.io/">www.mugondungu.com</a>
+                    </li>
+                    <li class="d-flex gap-2 align-items-center n4-color">
+                      <i class="ph ph-map-pin"></i> Nairobi, Kenya
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="d-flex flex-wrap flex-md-nowrap align-items-center gap-5 gap-md-10 pb-4 pb-md-8 br-bottom-n3 pt-60"
+              >
+                <div class="resume-profile flex-shrink-0">
+                  <img
+                    src="./assets/images/WhatsApp Image 2025-01-16 at 11.10.26 AM.jpeg"
+                    alt="profile"
+                    class="object-fit-cover"
+                    width="227"
+                    height="159"
+                  />
+                </div>
+                <p class="n42-color fs-seven">
+                Highly skilled Data Analyst with over 5 years of experience in transforming complex data into actionable insights. Proficient in Python, SQL, Excel, Tableau, and Power BI. Proven track record of driving data-driven decisions, improving operational efficiency, and enhancing business performance. Strong analytical and problem-solving skills, with a focus on data visualization, predictive analytics, and statistical analysis. Committed to continuous learning and staying updated with the latest data analysis tools and techniques. Seeking to leverage my expertise to contribute to innovative data projects and drive meaningful business outcomes.
+                </p>
+              </div>
+
+              <div class="resume-section row g-6 pt-60 pb-60 br-bottom-n3">
+                <div class="col-md-8 col-lg-12 col-xl-8 col-xxl-9">
+                  <div class="d-flex align-items-center gap-2 mb-5 mb-md-10">
+                    <div class="title-line2"></div>
+                    <h2 class="fs-three p1-color fw-semibold">
+                      Work Experiences
+                    </h2>
+                  </div>
+
+                  <div class="mb-4 mb-md-6">
+                    <div
+                      class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center"
+                    >
+                      <span class="n5-color fs-six fw-medium"
+                        >Lead Data Analyst</span
+                      >
+                      <span class="n4-color fs-eight"
+                        >Tradecare Africa Ltd | 2023 - Present</span
+                      >
+                    </div>
+                    <p class="n42-color fs-seven my-2 my-md-5">
+                    As a Data Analyst, I spearheaded data-driven initiatives that transformed business operations and enhanced decision-making processes. Leveraging my expertise in Python, Excel, SQL, Tableau, and Power BI, I played a pivotal role in turning complex data into actionable insights.
+                    </p>
+                    <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                      <li class="n42-color fs-seven">
+                      Data Analysis and Reporting: Conducted comprehensive data analysis using Python and SQL to identify trends and patterns, resulting in a 20% increase in operational efficiency.
+                      </li>
+                      <li class="n42-color fs-seven">
+                      Data Visualization: Developed interactive dashboards using Tableau and Power BI, enabling stakeholders to make data-driven decisions and improving reporting accuracy by 30%.
+                      </li>
+                      <li class="n42-color fs-seven">
+                      Predictive Modeling: Built and deployed predictive models to forecast customer behavior, leading to a 15% increase in customer retention and a significant boost in revenue.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-4 mb-md-6">
+                    <div
+                      class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center"
+                    >
+                      <span class="n5-color fs-six fw-medium"
+                        >Junior Data Analyst</span
+                      >
+                      <span class="n4-color fs-eight">Exceptional Africalla (K) Ltd | 2018 - 2022</span>
+                    </div>
+                    <p class="n42-color fs-seven my-2 my-md-5">
+                    As a Junior Data Analyst at Exceptional Africalla (K) Ltd, I played a crucial role in supporting data-driven projects that enhanced business insights and decision-making. Utilizing my skills in Excel, SQL, and data visualization tools, I contributed to various analytical initiatives that drove operational improvements.
+                    </p>
+                    <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                      <li class="n42-color fs-seven">
+                      Data Collection and Cleaning: Managed data collection and cleaning processes, ensuring data accuracy and integrity, which improved data reliability by 20%.
+                      </li>
+                      <li class="n42-color fs-seven">
+                      Data Analysis: Performed detailed data analysis using Excel and SQL, identifying key trends and insights that informed strategic decisions.
+                      </li>
+                      <li class="n42-color fs-seven">
+                      Process Optimization: Implemented new data management practices, reducing data processing time by 15% and enhancing overall data quality.
+                      </li>
+                      <li class="n42-color fs-seven">
+                      Reporting and Visualization: Created comprehensive reports and visualizations using Power BI, enabling stakeholders to understand complex data more effectively.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-4 mb-md-6">
+                    <div
+                      class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center"
+                    >
+                      <span class="n5-color fs-six fw-medium"
+                        >Data Analyst Intern</span
+                      >
+                      <span class="n4-color fs-eight"
+                        >EastAfrisat Communications | 2016 - 2018</span
+                      >
+                    </div>
+                    <p class="n42-color fs-seven my-2 my-md-5">
+                    As a Data Science Intern at EastAfrisat Communications, I gained hands-on experience in data analysis, machine learning, and data visualization. Working on real-world projects, I applied my knowledge of Python, SQL, and Tableau to deliver valuable insights and support data-driven decision-making.
+                    </p>
+                    <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                      <li class="n42-color fs-seven">
+                      Data Visualization: Created visualizations using Tableau, presenting complex data in an easy-to-understand format for stakeholders.
+                      </li>
+                      <li class="n42-color fs-seven">
+                      Research and Development: Conducted research on emerging data science technologies and tools, contributing to the development of innovative data solutions.
+                      </li>
+                      <li class="n42-color fs-seven">
+                      Machine Learning: Assisted in developing and testing machine learning models, enhancing predictive capabilities and improving model accuracy by 15%.
+                      </li>
+                      <li class="n42-color fs-seven">
+                      Data Analysis: Conducted data analysis using Python and SQL, contributing to projects that identified key business trends and opportunities.
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- <div class="mb-4 mb-md-6">
+                    <div
+                      class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center mb-2 mb-md-4"
+                    >
+                      <span class="n5-color fs-six fw-medium"
+                        >Senior Developer</span
+                      >
+                      <span class="n42-color fs-eight">Uber | 2013 - 2014</span>
+                    </div>
+                    <p class="n42-color fs-seven">
+                      Role description goes here ipsum dolor sit amet,
+                      consectetuer adipiscing elit. Aenean commodo ligula eget
+                      dolor. Aenean massa. Cum sociis natoque penatibus et
+                      magnis dis parturient montes, nascetur ridiculus mus.
+                      Donec quam felis, ultricies nec, pellentesque eu, pretium
+                      quis, sem. Donec pede justo, fringilla vel.
+                    </p>
+                  </div>
+                  <div class="mb-4 mb-md-6">
+                    <div
+                      class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center mb-2 mb-md-4"
+                    >
+                      <span class="n5-color fs-six fw-medium"
+                        >Backend Developer</span
+                      >
+                      <span class="n42-color fs-eight"
+                        >Amazon | 2014 - 2016</span
+                      >
+                    </div>
+                    <p class="n42-color fs-seven">
+                      Role description goes here ipsum dolor sit amet,
+                      consectetuer adipiscing elit. Aenean commodo ligula eget
+                      dolor. Aenean massa. Cum sociis natoque penatibus et
+                      magnis dis parturient montes, nascetur ridiculus mus.
+                      Donec quam felis, ultricies nec, pellentesque eu, pretium
+                      quis, sem. Donec pede justo, fringilla vel.
+                    </p>
+                  </div>
+                  <div class="mb-5 mb-md-10">
+                    <div
+                      class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center mb-2 mb-md-4"
+                    >
+                      <span class="n5-color fs-six fw-medium"
+                        >Frontend Developer</span
+                      >
+                      <span class="n42-color fs-eight"
+                        >Startup | 2013 - 2014</span
+                      >
+                    </div>
+                    <p class="n42-color fs-seven">
+                      Role description goes here ipsum dolor sit amet,
+                      consectetuer adipiscing elit. Aenean commodo ligula eget
+                      dolor. Aenean massa. Cum sociis natoque penatibus et
+                      magnis dis parturient montes, nascetur ridiculus mus.
+                      Donec quam felis, ultricies nec, pellentesque eu, pretium
+                      quis, sem. Donec pede justo, fringilla vel.
+                    </p>
+                  </div> -->
+
+                  <div class="d-flex align-items-center gap-2 mb-5 mb-md-10">
+                    <div class="title-line2"></div>
+                    <h2 class="fs-three p1-color fw-semibold">Projects</h2>
+                  </div>
+                  <div class="mb-4 mb-md-6">
+                    <div
+                      class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center mb-2 mb-md-4"
+                    >
+                      <span class="n5-color fs-six fw-medium"
+                        >Project Lorem Ipsum</span
+                      >
+                      <span class="n42-color fs-eight">Open Source</span>
+                    </div>
+                    <p class="n42-color fs-seven">
+                      You can use this section for your side projects. You
+                      can provide a project link here as well. Lorem ipsum dolor
+                      sit amet, consectetuer adipiscing elit. Aenean commodo
+                      ligula eget dolor. Aenean massa. Cum sociis natoque
+                      penatibus et magnis dis parturient montes, nascetur
+                      ridiculus mus.
+                    </p>
+                  </div>
+                  <div class="mb-4 mb-md-6">
+                    <div
+                      class="d-flex flex-wrap gap-1 gap-sm-3 justify-content-between align-items-center mb-2 mb-md-4"
+                    >
+                      <span class="n5-color fs-six fw-medium"
+                        >Project Sed Fringilla</span
+                      >
+                      <span class="n42-color fs-eight">Open Source</span>
+                    </div>
+                    <p class="n42-color fs-seven">
+                      You can use this section for your side projects. Cras
+                      dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                      eleifend tellus. Aenean leo ligula, porttitor eu,
+                      consequat vitae, eleifend ac, enim.
+                    </p>
+                  </div>
+                  <div>
+                    <div
+                      class="d-flex flex-wrap gap-2 gap-sm-3 justify-content-between align-items-center mb-2 mb-md-4"
+                    >
+                      <span class="n5-color fs-six fw-medium"
+                        >Project Praesent</span
+                      >
+                      <span class="n42-color fs-eight">Open Source</span>
+                    </div>
+                    <p class="n42-color fs-seven">
+                      You can use this section for your side projects. Cras
+                      dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                      eleifend tellus. Aenean leo ligula, porttitor eu,
+                      consequat vitae, eleifend ac, enim.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- right side  -->
+                <div class="col-md-4 col-lg-12 col-xl-4 col-xxl-3">
+                  <div
+                    class="ps-4 ps-xxl-7 br-left-n3 d-flex flex-column gap-8 gap-md-15"
+                  >
+                    <!-- skills  -->
+                    <div>
+                      <div
+                        class="d-flex align-items-center gap-2 mb-5 mb-md-10"
+                      >
+                        <div class="title-line2"></div>
+                        <h2 class="fs-three p1-color fw-semibold">Skills</h2>
+                      </div>
+
+                      <div class="mb-3 mb-md-6">
+                        <h5 class="fs-six n5-color fw-medium mb-2 mb-md-4">
+                          Technical
+                        </h5>
+                        <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                          <li class="n4-color fs-seven">
+                          Python
+                          </li>
+                          <li class="n4-color fs-seven">R Programming</li>
+                          <li class="n4-color fs-seven">Tableau</li>
+                          <li class="n4-color fs-seven">Power BI</li>
+                          <li class="n4-color fs-seven">
+                            SQL
+                          </li>
+                          <li class="n4-color fs-seven">
+                          Data Automation
+                          </li>
+                          <li class="n4-color fs-seven">
+                          Data Reporting
+                          </li>
+                          <li class="n4-color fs-seven">Data Visualization</li>
+                          <li class="n4-color fs-seven">Statistical Analysis</li>
+                          <li class="n4-color fs-seven">Data Mining</li>
+                          <li class="n4-color fs-seven">Data Cleaning</li>
+                          <li class="n4-color fs-seven">Data Transformation</li>
+                          <li class="n4-color fs-seven">Predictive Analytics</li>
+                          <li class="n4-color fs-seven">Big Data Technologies</li>
+                          <li class="n4-color fs-seven">Data Warehousing</li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <h5 class="fs-six n5-color fw-medium mb-2 mb-md-4">
+                          Professional
+                        </h5>
+                        <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                          <li class="n4-color fs-seven">
+                            Effective communication
+                          </li>
+                          <li class="n4-color fs-seven">Team player</li>
+                          <li class="n4-color fs-seven">
+                            Strong problem solver
+                          </li>
+                          <li class="n4-color fs-seven">
+                          Team Collaboration
+                          </li>
+                          <li class="n4-color fs-seven">
+                          Project Management
+                          </li>
+                          <li class="n4-color fs-seven">
+                          Presentation Skills
+                          </li>
+                          <li class="n4-color fs-seven">
+                          Time Management
+                          </li>
+                          <li class="n4-color fs-seven">
+                          Continuous Learning
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- education  -->
+                    <div>
+                      <div class="d-flex align-items-center gap-2 mb-3 mb-md-6">
+                        <div class="title-line2"></div>
+                        <h2 class="fs-three p1-color fw-semibold">Education</h2>
+                      </div>
+                      <div class="d-flex gap-2 mb-3 mb-md-5">
+                        <i class="ph ph-graduation-cap fs-six p1-color"></i>
+                        <div>
+                          <span class="n4-color fs-seven"
+                            >BSc in Computer Science United States International University</span
+                          >
+                          <span class="n4-color fs-eleven">2012 - 2016</span>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <i class="ph ph-graduation-cap fs-six p1-color"></i>
+                        <div>
+                          <span class="n4-color fs-seven"
+                            >Associate Degree Software Development Moringa School</span
+                          >
+                          <span class="n4-color fs-eleven">2018 - 2020</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- awards  -->
+                    <div>
+                      <div class="d-flex align-items-center gap-2 mb-3 mb-md-6">
+                        <div class="title-line2"></div>
+                        <h2 class="fs-three p1-color fw-semibold">Awards</h2>
+                      </div>
+                      <div class="d-flex gap-2 mb-3 mb-md-5">
+                        <i class="ph ph-trophy fs-six p1-color"></i>
+                        <div>
+                          <span class="n4-color fs-seven"
+                            >Award Lorem Ipsum Microsoft lorem ipsum</span
+                          >
+                          <span class="n4-color fs-eleven">2019</span>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-2">
+                        <i class="ph ph-trophy fs-six p1-color"></i>
+                        <div>
+                          <span class="n4-color fs-seven"
+                            >Award Donec Sodales Oracle Aenean</span
+                          >
+                          <span class="n4-color fs-eleven">2017</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Languages  -->
+                    <div>
+                      <div class="d-flex align-items-center gap-2 mb-3 mb-md-6">
+                        <div class="title-line2"></div>
+                        <h2 class="fs-three p1-color fw-semibold">Languages</h2>
+                      </div>
+                      <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                        <li class="n4-color fs-seven">English(Professional)</li>
+                        <li class="n4-color fs-seven">
+                          Swahili (Professional)
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- Interests  -->
+                    <div>
+                      <div class="d-flex align-items-center gap-2 mb-3 mb-md-6">
+                        <div class="title-line2"></div>
+                        <h2 class="fs-three p1-color fw-semibold">Interests</h2>
+                      </div>
+                      <ul class="d-flex flex-column gap-3 ms-6 ms-lg-10">
+                        <li class="n4-color fs-seven">Climbing</li>
+                        <li class="n4-color fs-seven">Camping</li>
+                        <li class="n4-color fs-seven">Photography</li>
+                        <li class="n4-color fs-seven">Travelling</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="d-flex flex-wrap gap-2 gap-md-3 gap-md-5 align-items-center justify-content-center mt-4 mt-md-8"
+              >
+                <a
+                  href="https://github.com/Mugo-Ndungu"
+                  class="d-flex gap-1 align-items-center resume-icon"
+                >
+                  <div class="social-icon">
+                    <i class="ph ph-github-logo p1-color"></i>
+                  </div>
+                  <span class="fs-nine n4-color">github.com/Mugo-Ndungu</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/mugo-the-analyst/"
+                  class="d-flex gap-1 align-items-center resume-icon"
+                >
+                  <div class="social-icon">
+                    <i class="ph ph-linkedin-logo p1-color"></i>
+                  </div>
+                  <span class="fs-nine n4-color">linkedin.com/in/mugo-the-analyst/</span>
+                </a>
+                <a
+                  href="javascript:void(0)"
+                  class="d-flex gap-1 align-items-center resume-icon"
+                >
+                  <div class="social-icon">
+                    <i class="ph ph-x-logo p1-color"></i>
+                  </div>
+                  <span class="fs-nine n4-color">@mugotheanalyst</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Resume section end -->
+
+        <!-- footer section start -->
+        <section
+          class="container d-flex flex-wrap gap-3 gap-md-6 justify-content-center justify-content-sm-between align-items-center pb-4 pb-md-8 text-center mb-16 mb-md-0"
+        >
+          <span class="fs-eight fw-medium n5-color order-sm-2"
+            >Designed by
+            <a
+              href="https://themeforest.net/user/uiaxis"
+              class="fs-eight fw-medium n5-color"
+              >UIAXIS</a
+            ></span
+          >
+          <span class="fs-eight fw-medium n5-color order-sm-1"
+            >Copyright © 2024
+            <a href="index.php" class="fs-eight fw-medium n5-color"
+              >Portfolify</a
+            >. All Rights Reserved.</span
+          >
+        </section>
+        <!-- footer section end -->
+      </div>
+    </div>
+
+    <!-- script js  -->
+    <script src="./assets/js/plugins/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <!-- swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- email js  -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  </body>
+</html>
