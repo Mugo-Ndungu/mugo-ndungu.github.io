@@ -6,19 +6,20 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=.9" />
-  <!-- #keywords -->
-  <meta name="keywords" content="boot, Bootstrap, Protfolily HTML Template" />
-  <!-- #description -->
-  <meta
-    name="description"
-    content="Protfolily - Responsive Personal Portfolio & Resume HTML Template" />
   <!-- #title -->
-  <title>Portfolify - Personal Portfolio & Resume HTML Template</title>
-  <!-- #favicon -->
-  <link
-    rel="shortcut icon"
-    href="assets/images/logo.png"
-    type="image/x-icon" />
+  <title>Fullstack Developer Portfolio | Alex Mugo</title>
+
+  <!-- Meta Tags for SEO -->
+  <meta name="description"
+    content="Discover the dynamic fullstack developer portfolio of Alex, featuring innovative projects in fullstack development, cutting-edge software solutions, and captivating frontend design. Connect with Alex for bespoke development services that redefine digital excellence." />
+  <meta name="keywords"
+    content="fullstack developer, fullstack engineer, fullstack web developer, fullstack developer portfolio, fullstack developer projects, fullstack developer resume, fullstack developer skills, fullstack development services, fullstack programming, fullstack development framework, software developer, software engineer, software development services, software developer portfolio, software developer projects, software developer resume, software developer skills, custom software development, software application development, software development company, frontend developer, frontend engineer, frontend web developer, frontend developer portfolio, frontend developer projects, frontend developer resume, frontend developer skills, frontend development services, frontend programming, frontend development framework, SEO expert, SEO consultant, SEO services, SEO specialist, SEO analyst, SEO agency, SEO optimization, SEO strategy, search engine optimization expert, SEO marketing services" />
+  <meta name="author" content="Alex Mugo" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
   <!-- ==== css dependencies start ==== -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <!-- AOS  -->
