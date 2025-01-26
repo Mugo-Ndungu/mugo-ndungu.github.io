@@ -647,6 +647,8 @@
               id="contact-form"
               autocomplete="off"
               class="mt-8 mt-md-15 p-5 p-md-10 rounded-5 brn4"
+              action="send-email.php"
+              method="POST"
             >
               <div
                 class="d-flex flex-wrap flex-md-nowrap gap-3 gap-md-6 mb-3 mb-md-6"
@@ -660,6 +662,7 @@
                     placeholder="Your Name*"
                     type="text"
                     id="name"
+                    name="name"
                     autocomplete="off"
                     required
                   />
@@ -673,6 +676,7 @@
                     placeholder="Email address*"
                     type="email"
                     id="email"
+                    name="email"
                     autocomplete="off"
                     required
                   />
@@ -690,6 +694,7 @@
                     placeholder="Phone*"
                     type="number"
                     id="phone"
+                    name="phone"
                     autocomplete="off"
                     required
                   />
@@ -703,6 +708,7 @@
                     placeholder="Location*"
                     type="text"
                     id="location"
+                    name="location"
                     autocomplete="off"
                     required
                   />
@@ -713,6 +719,7 @@
                   class="n5-color px-3 px-md-6 py-2 py-md-4 rounded-2 brn4 w-100 h-120"
                   placeholder="Your Message:"
                   id="message"
+                  name="message"
                   autocomplete="off"
                 ></textarea>
               </div>
@@ -721,6 +728,7 @@
                 <input
                   id="check"
                   type="checkbox"
+                  name="check"
                   class="cursor-pointer checkbox-single"
                 />
                 <label for="check" class="n4-color fs-nine cursor-pointer">
@@ -745,9 +753,7 @@
         >
           <span class="fs-eight fw-medium n5-color order-sm-2"
             >Designed by
-            <a
-              href="#"
-              class="fs-eight fw-medium n5-color"
+            <a href="#" class="fs-eight fw-medium n5-color"
               >Skylogix Group</a
             ></span
           >
@@ -777,6 +783,55 @@
           }
         });
       });
+    </script>
+    <script>
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          // Prevent the default form submission
+          e.preventDefault();
+
+          // Get form data
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const location = document.getElementById("location").value;
+          const message = document.getElementById("message").value;
+          const check = document.getElementById("check").checked;
+
+          // Clear previous error messages
+          const errorMessages = document.querySelectorAll(".error-message");
+          errorMessages.forEach((msg) => msg.remove());
+
+          // Validate fields
+          if (!name || !email || !phone || !location || !message) {
+            showError("Please fill in all required fields.");
+            return;
+          }
+
+          // Validate email format
+          if (!validateEmail(email)) {
+            showError("Please enter a valid email address.");
+            return;
+          }
+
+          // If everything is okay, submit the form
+          this.submit();
+        });
+
+      // Show error message
+      function showError(message) {
+        const errorDiv = document.createElement("div");
+        errorDiv.classList.add("error-message", "alert", "alert-danger");
+        errorDiv.textContent = message;
+        document.getElementById("contact-form").prepend(errorDiv);
+      }
+
+      // Validate email format
+      function validateEmail(email) {
+        const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        return re.test(String(email).toLowerCase());
+      }
     </script>
 
     <!-- script js  -->
